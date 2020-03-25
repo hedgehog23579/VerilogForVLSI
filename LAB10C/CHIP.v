@@ -91,7 +91,7 @@ always @ (posedge CLK) begin
 			end
 
 			else begin
-			dis[count] = (dis[in_use-1] > dis[in_use-5] ) ? (dis[in_use-5] + IN_DATA) : (dis[in_use-1] + IN_DATA);			
+				dis[count] = (dis[in_use-1] > dis[in_use-5] ) ? (dis[in_use-5] + IN_DATA) : (dis[in_use-1] + IN_DATA);			
 			end	
 		end
 		count = count + 1;
